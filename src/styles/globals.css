@@ -124,33 +124,69 @@
     font-family: var(--font-manrope);
     @apply bg-background text-foreground;
   }
-
-  h1 {
-    @apply text-xl font-bold tracking-tight lg:text-2xl;
+    /* Typography */
+  @theme inline {
+    --font-sans: var(--font-manrope);
+  }
+  
+  :root {
+    --text-heading-1: 64px;
+    --text-heading-2: 48px;
+    --text-heading-3: 32px;
+    --text-heading-4: 24px;
+    --text-heading-5: 20px;
+  
+    --text-body-1: 18px;
+    --text-body-2: 16px;
+    --text-body-3: 14px;
+    --text-body-4: 12px;
+  
+    --leading-heading-1: 1.1;
+    --leading-heading-2: 1.15;
+    --leading-heading-3: 1.2;
+    --leading-body: 1.6;
   }
 
-  h2 {
-    @apply text-3xl font-semibold tracking-tight;
+  .heading-1 {
+    font-size: var(--text-heading-1);
+    line-height: var(--leading-heading-1);
+    font-weight: 800;
   }
-
-  h3 {
-    @apply text-2xl font-semibold tracking-tight;
+  
+  .heading-2 {
+    font-size: var(--text-heading-2);
+    line-height: var(--leading-heading-2);
+    font-weight: 700;
   }
-
-  h4 {
-    @apply text-xl font-semibold tracking-tight;
+  
+  .heading-3 {
+    font-size: var(--text-heading-3);
+    line-height: var(--leading-heading-3);
+    font-weight: 600;
   }
-
-  h5 {
-    @apply text-lg font-semibold;
+  
+  .text-1 {
+    font-size: var(--text-body-1);
+    line-height: var(--leading-body);
+    font-weight: 700;
   }
-
-  h6 {
-    @apply text-base font-semibold;
+  
+  .text-2 {
+    font-size: var(--text-body-2);
+    line-height: var(--leading-body);
+    font-weight: 600;
   }
-
-  p {
-    @apply text-base;
+  
+  .text-3 {
+    font-size: var(--text-body-3);
+    line-height: var(--leading-body);
+    font-weight: 500;
+  }
+  
+  .text-4 {
+    font-size: var(--text-body-4);
+    line-height: var(--leading-body);
+    font-weight: 400;
   }
   
 }

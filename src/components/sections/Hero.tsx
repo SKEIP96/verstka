@@ -5,18 +5,18 @@ export default function Hero() {
       {/* Hero Wrapper */}
       <div className="relative h-screen w-full overflow-hidden bg-[#EEF3F8]">
         {/* Back Title */}
-        <div className="absolute top-40 left-1/2 z-20 w-[95vw] h-[50vw]  -translate-x-1/2">
+        <div className="absolute top-40 left-1/2 z-20 w-[95vw] h-[50vw] max-w-[2000px] -translate-x-1/2">
           <Image
             src="/images/hero/Urbanouse.png"
             alt="Urbanouse"
             width={2000}
             height={1200}
-            className="h-auto w-full object-contain "
+            className="h-auto w-full object-contain"
             priority
           />
         </div>
         {/* House image */}
-        <div className="absolute top-60 left-1/2 z-20 w-[100vw] h-[50vw]  -translate-x-1/2">
+        <div className="absolute top-60 left-1/2 z-20 w-[100vw] h-[50vw] max-w-[2000px] -translate-x-1/2">
           <Image
             src="/images/hero/3d-house-model.svg"
             alt="Modern house"

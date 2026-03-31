@@ -16,14 +16,14 @@ export default function Navbar() {
   return (
     <header className="absolute top-0 left-0 w-full z-50">
       <div className="container mx-auto px-10 pt-3">
-        <div className="flex items-center justify-between">
+        <div className="relativу flex items-center justify-between">
           {/* Logo */}
           <Link
             href="/"
             className="flex items-center font-semibold text-lg gap-1"
           >
             <Image
-              src="images\logos\logo-mark.svg"
+              src="/images/logos/logo-mark.svg"
               alt="Urbanouse logo"
               width={20}
               height={21}
@@ -31,7 +31,7 @@ export default function Navbar() {
             <span className="font-bold text-xl">Urbanouse</span>
           </Link>
           {/* Menu*/}
-          <nav className="flex items-center gap-5 text-sm text-zinc-600">
+          <nav className="absolute left-1/2 -translate-x-1/2 flex items-center gap-5 text-sm text-zinc-600">
             {navLinks.map((item) => (
               <Link
                 key={item.href}
