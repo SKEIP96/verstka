@@ -29,15 +29,15 @@ export default function Hero() {
         {/* Bottom Conteiner */}
         <div className="absolute bottom-10 left-6 right-6 z-30   flex items-end justify-between">
           {/* Left text */}
-          <p className="max-w-[360px] text-white">
+          <p className="max-w-[360px] text-3 text-regular text-white">
             Discover meticulously crafted homes and properties, blending
             contemporary aesthetics with sustainable living.
           </p>
           {/* Right blick */}
           <div className="max-w-[360px] text-white">
-            <p className="text-lg font-medium">Silverstone Residence</p>
-            <p className="mt-1 text-sm text-white/80">1234 Sunflower Lane</p>
-            <p className="text-sm text-white/80">Los Angeles, CA 90001</p>
+            <p className="text-4 text-semibold font-medium">Silverstone Residence</p>
+            <p className="mt-1 text-5 text-regular text-white/80">1234 Sunflower Lane</p>
+            <p className="text-5 text-regular text-white/80">Los Angeles, CA 90001</p>
           </div>
         </div>
       </div>

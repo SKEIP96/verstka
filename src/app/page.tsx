@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar"
 import Hero from "@/components/sections/Hero"
-import PropertySearch from "@/components/sections/PropertySearch"
+import PropertySearch from "@/components/sections/PropertyFilters"
 
 export default function Home() {
   return (
