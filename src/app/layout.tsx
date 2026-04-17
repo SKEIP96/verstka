@@ -1,12 +1,12 @@
-import type { Metadata } from "next"
-import "../styles/globals.css"
-import Navbar from "@/components/layout/Navbar"
+import type { Metadata } from "next";
+import "../styles/globals.css";
+import Navbar from "@/components/layout/Navbar";
 import { Manrope } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Urbanouse",
   description: "Real estate website",
-}
+};
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -17,14 +17,14 @@ const manrope = Manrope({
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} antialiased`}>
-        {children}
+      <body className={`${manrope.className} antialiased`}>
         <Navbar />
+        {children}
       </body>
     </html>
-  )
+  );
 }

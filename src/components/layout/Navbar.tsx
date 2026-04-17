@@ -15,8 +15,8 @@ const navLinks = [
 export default function Navbar() {
   return (
     <header className="absolute top-0 left-0 w-full z-50">
-      <div className="container mx-auto px-10 pt-3">
-        <div className="relativу flex items-center justify-between">
+      <div className="container-main pt-3">
+        <div className="relativ flex items-center justify-between">
           {/* Logo */}
           <Link
             href="/"
@@ -25,10 +25,10 @@ export default function Navbar() {
             <Image
               src="/images/logos/logo-mark.svg"
               alt="Urbanouse logo"
-              width={20}
+              width={25}
               height={21}
             />
-            <span className="font-bold text-xl">Urbanouse</span>
+            <span className="font-bold text-1">Urbanouse</span>
           </Link>
           {/* Menu*/}
           <nav className="absolute left-1/2 -translate-x-1/2 flex items-center gap-5 text-sm text-zinc-600">
@@ -36,7 +36,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="hover:text-black transition flex items-center gap-1"
+                className="hover:text-black  text-5 text-regular transition flex items-center gap-1"
               >
                 <span>{item.label}</span>
                 {item.hasDropdown && (

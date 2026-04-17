@@ -12,8 +12,8 @@ export default function PropertyFilters() {
   const [budget, setBudget] = useState("$500,000");
 
   return (
-    <section className="w-full py-16">
-      <div className="mx-auto max-w-[1600px] px-6">
+    <section className="w-full pt-25">
+      <div className="container-main">
         {/* Card */}
         <div className=" bg-white p-8">
           {/* Title */}
