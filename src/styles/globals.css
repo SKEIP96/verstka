@@ -216,4 +216,12 @@ h6 {
   @apply mx-auto w-full max-w-[1440px] px-6;
 }
 
+html {
+  scrollbar-gutter: stable;
 }
+
+body {
+  min-height: 100vh;
+}
+}
+

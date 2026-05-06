@@ -21,7 +21,7 @@ export default function AboutUrbanouse() {
               </h1>
             </div>
 
-            <p className="max-w-[530px] text-4 font-regular leading-[1.5] text-[#8C8C8C]">
+            <p className="max-w-[530px] text-4 font-regular leading-normal text-[#8C8C8C]">
               At Urbanouse, we are committed to helping individuals and families
               find their perfect homes and smart investment properties. Our
               approach blends personalized service, expert insights, and a
@@ -36,7 +36,7 @@ export default function AboutUrbanouse() {
             <div className="flex  gap-2">
               {/* Featured card */}
               <div className="relative h-[320px] w-[500px] rounded-[15px] bg-neutral-200">
-                <div className="absolute inset-x-0 bottom-0 rounded-b-[15px] bg-gradient-to-t from-black/60 to-transparent p-5 text-white">
+                <div className="absolute inset-x-0 bottom-0 rounded-b-[15px] bg-linear-to-t from-black/60 to-transparent p-5 text-white">
                   <p className="font-bold h7">Family House</p>
                   <p className="mt-2 max-w-[530px] text-5 font-regular text-white/80">
                     Discover modern family living with spacious layouts and

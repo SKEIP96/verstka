@@ -20,7 +20,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center font-semibold text-lg gap-1"
+            className="flex items-center font-semibold text-lg gap-1 h-auto"
           >
             <Image
               src="/images/logos/logo-mark.svg"

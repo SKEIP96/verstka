@@ -24,10 +24,8 @@ export default function PropertyFilters() {
             needs.
           </p>
           <div className="flex justify-center items-end mt-[60px]">
-           
             {/* Search Selects*/}
             <div className="flex items-end gap-20 ">
-              
               <FilterSelect
                 label="Looking for"
                 value={lookingFor}
@@ -78,7 +76,6 @@ export default function PropertyFilters() {
                 <Search size={32} strokeWidth={1.8} />
               </button>
             </div>
-
           </div>
         </div>
       </div>

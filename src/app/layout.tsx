@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 import Navbar from "@/components/layout/Navbar";
 import { Manrope } from "next/font/google";
+import Footer from "@/components/layout/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Urbanouse",
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${manrope.className} antialiased`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

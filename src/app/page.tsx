@@ -4,6 +4,10 @@ import Hero from "@/components/sections/Hero"
 import PropertySearch from "@/components/sections/PropertyFilters"
 import AboutUrbanouse from "@/components/sections/AboutUrbanouse";
 import PropertySection from "@/components/sections/PropertyStats";
+import FeaturedPropertiesSection from "@/components/sections/FeaturedPropertiesSection/FeaturedPropertiesSection";
+import TopAgentsSection from "@/components/sections/TopAgents/TopAgentsSection"
+import TestimonialsSection from "@/components/sections/Testimonials/TestimonialsSection";
+import FAQSection from "@/components/sections/FAQ/FAQSection";
 
 export default function Home() {
   return (
@@ -13,6 +17,10 @@ export default function Home() {
        <PropertySearch />
        <AboutUrbanouse />
        <PropertySection />
+       <FeaturedPropertiesSection />
+       <TopAgentsSection />
+       <TestimonialsSection />
+       <FAQSection />
       </main>
     </div>
   );

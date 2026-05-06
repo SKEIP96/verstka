@@ -25,7 +25,7 @@ export default function FilterField({
     <div className="w-fit">
       <Label className="text-5 font-regular text-[#8c8c8c]">{label}</Label>
       <Select name="select" value={value} onValueChange={onChange}>
-        <SelectTrigger className="mt-2 text-3 font-medium">
+        <SelectTrigger className="mt-2 text-3 font-medium w-[clamp(150px,10vw,140px)] border-0 border-b border-[#E5E5E5] px-0 shadow-none">
           <SelectValue />
         </SelectTrigger>
 

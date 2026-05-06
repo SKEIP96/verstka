@@ -10,7 +10,7 @@ export default function Hero() {
             {/* Back Title */}
             <div className="absolute top-40 left-1/2 z-10 w-full max-w-[1800px] -translate-x-1/2 px-6">
               <Image
-                src="/images/hero/Urbanouse.png"
+                src="/images/hero/Urbanouse.svg"
                 alt="Urbanouse"
                 width={2000}
                 height={1200}
@@ -33,7 +33,7 @@ export default function Hero() {
         </div>
 
         {/* Bottom gradient */}
-        <div className="absolute inset-x-0 bottom-0 z-20 h-[260px] bg-gradient-to-t from-black/60 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 z-20 h-[260px] bg-linear-to-t from-black/60 to-transparent" />
 
         {/* Bottom content */}
         <div className="absolute bottom-10 left-0 right-0 z-30">

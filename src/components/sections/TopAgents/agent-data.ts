@@ -1,0 +1,58 @@
+// agent-data.ts
+export const agents = [
+  {
+    id: 1,
+    name: "Jaydon George",
+    rating: 4.9,
+    role: "Senior Real Estate Advisor",
+    city: "Paris",
+    propertiesSold: 432,
+    image: "/images/properties/agents/shreck.jpg",
+  },
+  {
+    id: 2,
+    name: "Jane Doe",
+    rating: 4.9,
+    role: "Senior Real Estate Advisor",
+    city: "London",
+    propertiesSold: 432,
+    image: "/images/agents/jane.jpg",
+  },
+  {
+    id: 3,
+    name: "Gustavo Bator",
+    rating: 4.9,
+    role: "Senior Real Estate Advisor",
+    city: "Manchester",
+    propertiesSold: 432,
+    image: "/images/agents/gustavo.jpg",
+  },
+  {
+    id: 4,
+    name: "Haylie Philips",
+    rating: 4.9,
+    role: "Senior Real Estate Advisor",
+    city: "Madrid",
+    propertiesSold: 432,
+    image: "/images/agents/haylie.jpg",
+  },
+  {
+    id: 5,
+    name: "Maximus Smith",
+    rating: 4.7,
+    role: "Real Estate Advisor",
+    city: "New York",
+    propertiesSold: 320,
+    image: "/images/agents/maximus.jpg",
+  },
+  {
+    id: 6,
+    name: "Emily Davis",
+    rating: 4.8,
+    role: "Senior Real Estate Advisor",
+    city: "Los Angeles",
+    propertiesSold: 500,
+    image: "/images/agents/emily.jpg",
+  },
+  // Добавь столько агентов, сколько нужно для теста
+];
