@@ -53,7 +53,7 @@ export default function Navbar() {
             >
               Sign Up
             </Button>
-            <Button className="rounded-full h-9 px-5">Sign In</Button>
+            <Button className="h-9 rounded-full px-5 border-2 border-black bg-transparent">Sign In</Button>
           </div>
         </div>
       </div>
