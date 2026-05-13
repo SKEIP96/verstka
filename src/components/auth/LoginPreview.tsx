@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function LogiinPreview() {
+export default function LoginPreview() {
   return (
     <div className="relative h-full overflow-hidden">
       {/* BACKGROUND IMAGE */}
@@ -20,12 +20,12 @@ export default function LogiinPreview() {
       {/* CONTENT */}
       <div className="absolute bottom-10 left-10 z-10 max-w-[420px] text-white">
         {/* TITLE */}
-        <h3 className="text-[34px] font-semibold leading-[1.15]">
+        <h3 className="h4 font-semibold">
           Explore Properties
         </h3>
 
         {/* DESCRIPTION */}
-        <p className="mt-4 text-[15px] leading-[1.7] text-white/80">
+        <p className="mt-4 text-5 text-white/80">
           Once your profile is setup, it’s time to explore! Use our advanced
           search features to find properties based on location, price, and type.
           You can also save your favorite properties for later viewing.

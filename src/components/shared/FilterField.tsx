@@ -1,4 +1,5 @@
 "use client";
+
 import {
   Select,
   SelectContent,
@@ -6,6 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+
 import { Label } from "@/components/ui/label";
 
 type FillterFieldProps = {
@@ -22,10 +24,13 @@ export default function FilterField({
   options,
 }: FillterFieldProps) {
   return (
-    <div className="w-fit">
-      <Label className="text-5 font-regular text-[#8c8c8c]">{label}</Label>
+    <div className="w-full lg:w-fit">
+      <Label className="text-5 font-regular text-[#8c8c8c]">
+        {label}
+      </Label>
+
       <Select name="select" value={value} onValueChange={onChange}>
-        <SelectTrigger className="mt-2 text-3 font-medium w-[clamp(150px,10vw,140px)] border-0 border-b border-[#E5E5E5] px-0 shadow-none">
+        <SelectTrigger className="mt-2 w-full border-0 border-b border-[#E5E5E5] px-0 text-3 font-medium shadow-none focus:ring-0 ">
           <SelectValue />
         </SelectTrigger>
 

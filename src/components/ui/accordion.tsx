@@ -41,7 +41,7 @@ function AccordionTrigger({
         {...props}
       >
         {children}
-        <ChevronDownIcon className="className=h-5 w-5 text-black" />
+        <ChevronDownIcon className="h-5 w-5 shrink-0 text-black" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   )
@@ -58,7 +58,7 @@ function AccordionContent({
       className="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
       {...props}
     >
-      <div className={cn("pt-0 pb-4", className)}>{children}</div>
+      <div className={cn("pt-2 pb-5", className)}>{children}</div>
     </AccordionPrimitive.Content>
   )
 }

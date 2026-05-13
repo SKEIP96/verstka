@@ -14,12 +14,12 @@ export default function TopAgentsSection() {
           </div>
 
           {/* TITLE */}
-          <h3 className="font-semibold text-black">
+          <h2 className="font-semibold text-black">
             Meet One of Our Top-Performing Agents
-          </h3>
+          </h2>
 
           {/* SUBTITLE */}
-          <p className="text-4 text-[#8C8C8C]">
+          <p className="text-4 font-regular text-[#8C8C8C]">
             A dedicated section highlighting an agent who’s gone above and
             beyond
           </p>

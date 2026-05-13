@@ -7,7 +7,7 @@ import { testimonials } from "./testimonial-data";
 
 export default function TestimonialsSection() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const testimonial = testimonials[activeIndex];
 
@@ -98,7 +98,7 @@ export default function TestimonialsSection() {
               className="animate-in fade-in slide-in-from-bottom-4 duration-700 ease-out"
             >
               {/* TESTIMONIAL TEXT */}
-              <h4 className="font-regular leading-[1.4] text-black">
+              <h4 className="font-regular text-black">
                 “{testimonial.text}”
               </h4>
 

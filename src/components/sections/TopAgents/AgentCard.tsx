@@ -34,7 +34,7 @@ export default function AgentCard({
 
       {/* AGENT NAME AND RATING BLOCK */}
       <div className="flex items-start mt-1 justify-between ">
-        <p className="text-medium h7 font-semibold text-[#090C1B]">{name}</p>
+        <p className="h7 font-semibold text-[#090C1B]">{name}</p>
         <span className="text-5 font-medium flex items-center gap-1">
           <Image
             src="\images\icons\star.svg"
@@ -48,12 +48,12 @@ export default function AgentCard({
       </div>
 
       {/* AGENT ROLE AND CITY BLOCK — выравнивание по левому краю */}
-      <div className="flex flex-col items-start text-regular text-5 text-gray-500 mt-1">
+      <div className="mt-1 flex flex-col items-start text-5 font-regular text-gray-500">
         <p>{role}</p>
       </div>
 
       {/* AGENT'S PROPERTIES SOLD BLOCK */}
-      <div className="flex flex-col items-start text-[14px] font-regular text-gray-400 mt-2">
+      <div className="mt-2 flex flex-col items-start text-6 font-regular text-gray-400">
         {/* Добавляем flex и items-center для выравнивания в одну строку */}
         <div className="flex items-center gap-1 mb-2">
           <MapPin className="h-5 w-5 " />
@@ -67,7 +67,7 @@ export default function AgentCard({
 
       {/* CONTACT AGENT BUTTON BLOCK */}
       <div className="flex w-full  mt-2">
-        <button className="flex-1 bg-white border-black border text-black  py-[6px] rounded-full font-semibold text-[14px]">
+        <button className="flex-1 rounded-full border border-black bg-white py-[6px] text-6 font-semibold text-black">
           Contact Agent
         </button>
       </div>

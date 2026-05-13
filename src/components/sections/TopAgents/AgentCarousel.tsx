@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -10,8 +10,13 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import AgentCard from "./AgentCard";
+import type { Agent } from "./agent-data";
 
-export function AgentCarousel({ agents }: { agents: any[] }) {
+type AgentCarouselProps = {
+  agents: Agent[];
+};
+
+export function AgentCarousel({ agents }: AgentCarouselProps) {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -22,9 +27,15 @@ export function AgentCarousel({ agents }: { agents: any[] }) {
     setCount(api.scrollSnapList().length);
     setCurrent(api.selectedScrollSnap());
 
-    api.on("select", () => {
+    const onSelect = () => {
       setCurrent(api.selectedScrollSnap());
-    });
+    };
+
+    api.on("select", onSelect);
+
+    return () => {
+      api.off("select", onSelect);
+    };
   }, [api]);
 
   return (

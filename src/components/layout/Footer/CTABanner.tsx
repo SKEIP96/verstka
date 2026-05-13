@@ -16,18 +16,18 @@ export default function CTABanner() {
       <div className="absolute inset-0 bg-black/10" />
 
       {/* BOTTOM GRADIENT */}
-      <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-[#050817]/70 via-[#050817]/30 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-[40%] bg-linear-to-t from-[#050817]/70 via-[#050817]/30 to-transparent" />
 
       {/* CONTENT */}
       <div className="relative z-10 mx-auto max-w-[1440px]">
         {/* TITLE */}
-        <h2 className=" font-semibold leading-[1.12] ">
+        <h2 className="font-semibold">
           Ready to Find Your <br />
           Dream Home with Urbanouse?
         </h2>
 
         {/* SUBTITLE */}
-        <p className="mx-auto mt-6 max-w-[690px]  text-3 font-medium leading-[1.5] text-white/85">
+        <p className="mx-auto mt-6 max-w-[690px] text-3 font-medium text-white/85">
           Join thousands of happy homeowners who found their perfect residence
           with us. Let’s make your property journey smooth and successful.
         </p>

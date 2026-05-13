@@ -1,5 +1,15 @@
 // agent-data.ts
-export const agents = [
+export type Agent = {
+  id: number;
+  name: string;
+  rating: number;
+  role: string;
+  city: string;
+  propertiesSold: number;
+  image: string;
+};
+
+export const agents: Agent[] = [
   {
     id: 1,
     name: "Jaydon George",
