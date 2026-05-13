@@ -30,14 +30,13 @@ export default function Navbar() {
               width={25}
               height={21}
             />
-
             <span className="text-[22px] font-bold text-black lg:text-1">
               Urbanouse
             </span>
           </Link>
 
           {/* DESKTOP MENU */}
-          <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-5 lg:flex">
+          <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-5 text-sm text-zinc-600 lg:flex">
             {navLinks.map((item) => (
               <Link
                 key={item.label}
@@ -45,7 +44,6 @@ export default function Navbar() {
                 className="flex items-center gap-1 text-5 font-regular text-black transition-opacity hover:opacity-70"
               >
                 <span>{item.label}</span>
-
                 {item.hasDropdown && (
                   <ChevronDown size={16} strokeWidth={1.4} />
                 )}
@@ -55,12 +53,14 @@ export default function Navbar() {
 
           {/* DESKTOP BUTTONS */}
           <div className="hidden items-center gap-3 lg:flex">
-            <Button
-              variant="outline"
-              className="h-9 rounded-full border-2 border-black bg-white px-5 text-black hover:bg-black hover:text-white"
-            >
-              Sign Up
-            </Button>
+            <Link href="/login">
+              <Button
+                variant="outline"
+                className="h-9 rounded-full border-2 border-black bg-white px-5 text-black hover:bg-black hover:text-white"
+              >
+                Sign Up
+              </Button>
+            </Link>
 
             <Button className="h-9 rounded-full border-2 border-black bg-black px-5 text-white hover:bg-black/80">
               Sign In
@@ -116,16 +116,20 @@ export default function Navbar() {
 
                 {/* MOBILE ACTIONS */}
                 <div className="mt-10 flex flex-col gap-3">
-                  <Button
-                    variant="outline"
-                    className="h-11 rounded-full border-2 border-black bg-white text-black hover:bg-black hover:text-white"
-                  >
-                    Sign Up
-                  </Button>
+                  <Link href="/login">
+                    <Button
+                      variant="outline"
+                      className="h-11 w-full rounded-full border-2 border-black bg-white text-black hover:bg-black hover:text-white"
+                    >
+                      Sign Up
+                    </Button>
+                  </Link>
 
-                  <Button className="h-11 rounded-full border-2 border-black bg-black text-white hover:bg-black/80">
-                    Sign In
-                  </Button>
+                  <Link href="/login">
+                    <Button className="h-11 w-full rounded-full border-2 border-black bg-black text-white hover:bg-black/80">
+                      Sign In
+                    </Button>
+                  </Link>
                 </div>
               </SheetContent>
             </Sheet>
